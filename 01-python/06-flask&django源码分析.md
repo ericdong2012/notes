@@ -7,7 +7,6 @@ views.py中视图请求的过程
 ｗerkzeug/routing  serving  ***
 		/routing  rule, map, mapadapter
 
-
 blueprints.py:
 
     def route(self, rule, **options):

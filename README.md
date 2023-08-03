@@ -1,11 +1,14 @@
-# x-note
+# notes
 
 ```
 项目描述：
 	该项目分享了一些自己的一些markdown, 包括python, go, vue, react, sql, nosql, middleware, k8s, istio, cka, 算法，设计模式等，有缘人自取。
 
 项目地址：
-	https://github.com/ericdong2012/x-note
+	https://github.com/ericdong2012/notes
+	
+视频地址：
+	
 
 目录结构如下：
 +--- 01-python

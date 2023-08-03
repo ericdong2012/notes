@@ -185,14 +185,12 @@ float("1")
 由 字母、下划线 和 数字 组成
 不能以数字开头
 不能与关键字重名
-
 ```
 
 ### 5.3.2 关键字
 
 ```
 就是在 Python 内部已经使用的标识符
-
 ```
 ### 5.3.3 变量命名规则
 
@@ -544,8 +542,7 @@ card_list = [{"name": "张三",
              {"name": "李四",
               "qq": "54321",
               "phone": "10086"}
-             ]
-             
+             ]      
 ```
 
 
@@ -596,7 +593,6 @@ from utils import send_message, receive_message
 执行函数后清理功能
 权限校验等场景
 缓存
-
 ```
 
 ## 12.2 代码示例
@@ -723,7 +719,7 @@ from time import ctime, sleep
 def timefun(func):
     def wrapped_func():
         print("%s called at %s" % (func.__name__, ctime()))
-        func()
+        return func()
     return wrapped_func
 
 @timefun
@@ -893,7 +889,6 @@ a+
 
 ## 14.3 代码示例
 ```
-
 # eg1:
 # 1. 打开 - 文件名需要注意大小写
 file = open("README.txt")
@@ -907,10 +902,8 @@ file.close()
 
 
 # eg2: 建议
-
 with open("output.txt", "r") as f:
     f.write("从删库到跑路")
-
 ```
 
 
@@ -950,7 +943,6 @@ class Cat:
 tom = Cat("Tom")
 tom.drink()
 tom.eat()
-
 ```
 
 
@@ -963,7 +955,6 @@ tom.eat()
 继承的语法
 class 类名(父类名):
     pass
-    
 ```
 
 

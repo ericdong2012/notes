@@ -262,13 +262,13 @@ p.apply_async(worker,(q,))
 
 ```
 1.迭代器
-isinstance(xxx,Iterator/Iterable)
+isinstance(xxx,  Iterator/Iterable)
 iter(class)
 next(iterator_ref)
 
 作用:生成数据的方式，且占用空间小
 区别：xrange和range
-其他：list(iterable)  生成iterable，再遍历;tuple(iterable)
+其他：list(iterable)  生成iterable，再遍历;  tuple(iterable)
 
 buildins：
 map(set,filter,slice,zip,complex,bytearrays, bytes,以及各种报错)
@@ -507,7 +507,7 @@ help(reload)
 python没有重载
 用super()不用类名（导致父类调多次）
 
-tips:super(grason,self).__init__()
+tips: super(grason, self).__init__()
 
 print(parent.__mro__)  #调用的先后顺序
 c3算法
@@ -1004,12 +1004,13 @@ from time import ctime, sleep
 def timefun(func):
     def wrapped_func():
         print("%s called at %s" % (func.__name__, ctime()))
-        func()
+        return func()
     return wrapped_func
 
 @timefun
 def foo():
     print("I am foo")
+    return 1
 
 @timefun
 def getInfo():
